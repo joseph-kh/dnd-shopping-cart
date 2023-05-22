@@ -4,7 +4,14 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
-
+    "baseUrl": ".",
+    "paths": {
+      "@*": ["./src/*", "./dist/*", ""],
+      "components/*": ["./src/components/*"],
+      "assets/*": ["./src/assets/*"],
+      "services/*": ["./src/services/*"],
+      "contexts/*": ["./src/contexts/*"]
+    },
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
